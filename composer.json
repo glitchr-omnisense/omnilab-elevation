@@ -1,0 +1,46 @@
+{
+    "name": "omnilab/elevation",
+    "type": "library",
+    "description": "Omnilab Elevation: the elevation of points and of a profile between two points from a digital elevation model (SRTM, ASTER, EU-DEM, Mapzen, ETOPO1, GEBCO...), through Open Topo Data's public API or a self-hosted instance, as Points with their elevation in metres, outside the contract's shapes; no key needed (100 locations a call, a call a second, 1,000 a day on the public instance).",
+    "keywords": [
+        "science",
+        "earth-sciences",
+        "elevation",
+        "dem",
+        "srtm",
+        "topography",
+        "opentopodata",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Elevation\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Elevation\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

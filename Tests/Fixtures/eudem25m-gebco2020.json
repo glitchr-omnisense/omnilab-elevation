@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "dataset": "eudem25m",
+      "elevation": 4780.302734375,
+      "location": {
+        "lat": 45.8326,
+        "lng": 6.8652
+      }
+    },
+    {
+      "dataset": "gebco2020",
+      "elevation": -4449.0,
+      "location": {
+        "lat": 0.0,
+        "lng": -150.0
+      }
+    }
+  ],
+  "status": "OK"
+}

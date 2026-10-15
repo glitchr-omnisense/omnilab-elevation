@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "dataset": "srtm30m",
+      "elevation": 150.0,
+      "location": {
+        "lat": 48.5734,
+        "lng": 7.7521
+      }
+    },
+    {
+      "dataset": "srtm30m",
+      "elevation": 4791.0,
+      "location": {
+        "lat": 45.8326,
+        "lng": 6.8652
+      }
+    },
+    {
+      "dataset": "srtm30m",
+      "elevation": null,
+      "location": {
+        "lat": 0.0,
+        "lng": -150.0
+      }
+    }
+  ],
+  "status": "OK"
+}
