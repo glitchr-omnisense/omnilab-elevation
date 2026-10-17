@@ -1,7 +1,7 @@
 # omnilab/elevation
 
 The elevation of points, and of a profile between two points, for
-[glitchr/omnilab](https://github.com/glitchr-studio/omnilab), from a digital elevation model -
+[omniscient/omnilab](https://github.com/glitchr-studio/omnilab), from a digital elevation model -
 SRTM, ASTER, EU-DEM, Mapzen, ETOPO1, GEBCO and the other datasets
 [Open Topo Data](https://www.opentopodata.org) serves - through its public API or an instance of
 your own. No key.
