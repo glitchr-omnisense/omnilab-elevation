@@ -1,0 +1,53 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "elevation",
+    "rateLimits": [
+        {
+            "max": 1,
+            "window": "second",
+            "scope": "application",
+            "operations": [],
+            "note": "Open Topo Data's public API: \"Max 1 call per second\" (opentopodata.org, Public API)."
+        },
+        {
+            "max": 1000,
+            "window": "day",
+            "scope": "application",
+            "operations": [],
+            "note": "Open Topo Data's public API: \"Max 1000 calls per day\"."
+        }
+    ],
+    "concurrency": null,
+    "rights": {
+        "commercial": "unknown",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://www.opentopodata.org/",
+        "policy": "https://www.opentopodata.org/#public-api",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "Read on opentopodata.org (2026-11-10): public API free, no key, max 100 locations per request, 1 call per second, 1000 calls per day; beyond that, self-host the open-source server or use the paid GPXZ hosting. No terms of use and no licence stated on the page: each dataset links to its producer (USGS, NASA, NOAA, GEBCO, EEA, BKG, LINZ...), whose own licence and credit apply (SRTM public domain; EU-DEM Copernicus; GEBCO...): rights left unknown. No rate-limit headers seen on a test call. Contact e-mail hidden behind e-mail protection on the page."
+    }
+}

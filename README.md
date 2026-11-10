@@ -48,6 +48,17 @@ keeps its own licence and attribution (SRTM: NASA/USGS, public domain; EU-DEM: t
 programme; GEBCO: the GEBCO Compilation Group; ASTER GDEM: NASA/METI...), which Open Topo Data's
 datasets pages state: credit the dataset you use.
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://www.opentopodata.org/#public-api on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: 1 a second; 1,000 a day.
+- Licence: not stated; commercial use: unknown.
+- Credit: not required.
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or
