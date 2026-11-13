@@ -39,6 +39,35 @@ the core's `Point`s, their `elevation` set in metres above sea level.
 
 See [docs/](docs/index.md) for what is read and what the API does not give here.
 
+## Install and a first call
+
+```sh
+composer require omnilab/elevation
+```
+
+A real call, with no account and no key: the elevation of the summit of Mont Blanc from Open Topo
+Data. `mailto` is your address, sent in the User-Agent so that the service can reach you before it
+blocks a caller; the source keeps to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Elevation\ElevationSourceFactory;
+use Omnilab\Model\Point;
+
+$dem = (new ElevationSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+[$blanc] = $dem->at(new Point(45.8326, 6.8652));
+echo $blanc->elevation, " m\n";
+```
+
+Its output on 2026-11-13:
+
+```
+4791 m
+```
+
 ## Terms of use
 
 Open Topo Data's public API is free and needs no key, but limited: at most 100 locations a call,
